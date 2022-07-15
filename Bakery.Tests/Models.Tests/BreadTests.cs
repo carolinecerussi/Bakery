@@ -1,5 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery;
+using System;
+using System.Collections.Generic;
 
 namespace Bakery.Tests 
 {
@@ -13,4 +15,5 @@ namespace Bakery.Tests
       Assert.AreEqual(true, testBreadCost.IsBreadCost(5));
     }
   }
+  
 }
