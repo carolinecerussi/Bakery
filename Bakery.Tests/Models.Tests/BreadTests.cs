@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Bakery.Models;
 using System;
 using System.Collections.Generic;
+using Bakery.Models;
 
 namespace Bakery.Tests 
 {
@@ -9,25 +9,38 @@ namespace Bakery.Tests
   public class BreadTests
   {
     [TestMethod]
-    public void IsBreadCost_Integer_True()
+    public void BreadCost_CostForOne_Int()
     {
-      BreadCost testBreadCost = new BreadCost();
-      Assert.AreEqual(true, testBreadCost.IsBreadCost(5));
+      int breadQuantity = 1;
+      double breadCost = 5;
+      Bread breadOrder = new Bread(breadQuantity);
+      Assert.AreEqual(breadCost, breadOrder.BreadCost());
     }
-  
-    [TestMethod]
-    public void BreadAmount_GetsBreadAmount_Amount()
-    {
-      string bAmount = "5"; 
-      BreadCost newbAmount = new BreadCost(bAmount);
 
-      string resultBAmount = newbAmount.BAmount;
-      Assert.AreEqual(bAmount, resultBAmount );
-
-    }
   }
-  
 }
+
+
+
+
+
+    // [TestMethod]
+    // public void IsBreadCost_Integer_True()
+    // {
+    //   BreadCost testBreadCost = new BreadCost();
+    //   Assert.AreEqual(true, testBreadCost.IsBreadCost(5));
+    // }
+  
+    // [TestMethod]
+    // public void BreadAmount_GetsBreadAmount_Amount()
+    // {
+    //   string bAmount = "5"; 
+    //   BreadCost newbAmount = new BreadCost(bAmount);
+
+    //   string resultBAmount = newbAmount.BAmount;
+    //   Assert.AreEqual(bAmount, resultBAmount );
+
+    // }
 
 // review : 
 //
