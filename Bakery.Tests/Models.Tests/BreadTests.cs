@@ -16,6 +16,14 @@ namespace Bakery.Tests
       Bread breadOrder = new Bread(breadQuantity);
       Assert.AreEqual(breadCost, breadOrder.BreadCost());
     }
+    [TestMethod]
+    public void BreadCost_ThirdLoafFreeSixOrdered_Int()
+    {
+      int breadQuantity = 5;
+      double breadCost = 20;
+      Bread breadOrder = new Bread(breadQuantity);
+      Assert.AreEqual(coffeeCost, coffeeOrder.CoffeeCost());
+    }
 
   }
 }
