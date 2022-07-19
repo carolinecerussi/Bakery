@@ -11,7 +11,7 @@ namespace Cafe.Tests
     [TestMethod]
     public void PastryCost_CostForOne_Int()
     {
-      int PastryQuantity = 1;
+      int pastryQuantity = 1;
       double pastryCost = 2;
       Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
