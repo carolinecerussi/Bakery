@@ -22,7 +22,9 @@ namespace Bakery.Models
       int pastryOrder = int.Parse(Console.ReadLine());
       Bread answerBread = new Bread(breadOrder);
       Pastry answerPastry = new Pastry(pastryOrder);
-      Console.WriteLine("For" + answerBread + "loaf/ves of bread, and " + answerPastry + " pastry/pastries, your order costs: " + (answerBread.BreadCost() + answerPastry.PastryCost()));
+      Console.WriteLine("For " + answerBread.Quantity + " loaf/ves of bread, and " + answerPastry.Quantity + " pastry/pastries, your order costs: $" + (answerBread.BreadCost() + answerPastry.PastryCost()));
+      Console.WriteLine("-----------------------------------");
+      Console.WriteLine("Thank you so much!");
     }
   }
 }
