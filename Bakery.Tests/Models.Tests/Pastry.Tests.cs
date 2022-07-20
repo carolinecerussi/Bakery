@@ -16,5 +16,19 @@ namespace Cafe.Tests
       Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
     }
+    [TestMethod]
+    public void PastryCost_Discount_Int()
+    {
+      int pastryQuantity = 3;
+      double pastryCost = 5;
+      Pastry pastryOrder = new Pastry(pastryQuantity);
+      Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
+    }
+    // public void PastryCost_ThirdHalfOffSixOrdered_Int()
+    // {
+    //   int pastryQuantity = 6;
+    //   double pastryCost = 10;
+    //   Pastry pastryOrder = new Pastry(pastryQuantity);
+    //   Assert.AreEqual(pastryCost, pastryOrder.PastryCost());
+    }  
   }
-}
